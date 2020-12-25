@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import {getToken, saveToken} from './pkce-spotify'
+import {generateToken, saveToken} from '../pkce-spotify'
 
 function getHashParams() {
   var hashParams = {};
@@ -23,7 +23,7 @@ function Callback() {
     msg = 'There was an error during the authentication'
   }
 
-  getToken(state, code).then(tokenData => {
+  generateToken(state, code).then(tokenData => {
     if(tokenData.error){
       msg = 'Access token retrive error'
     }

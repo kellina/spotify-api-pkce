@@ -41,7 +41,7 @@ function goAuthorizationURI() {
 }
 
 
-async function getToken(state, code) {
+async function generateToken(state, code) {
     const savedState = localStorage.getItem(STATE_KEY)
     localStorage.removeItem(STATE_KEY)
     if (state !== savedState) {
@@ -78,5 +78,9 @@ function saveToken(tokenData) {
     localStorage.setItem(ACCESS_TOKEN_REFRESH_KEY, refresh_token)
 }
 
+function getToken() {
+    return localStorage.getItem(ACCESS_TOKEN_KEY)
+}
+
 export default goAuthorizationURI
-export { getToken, saveToken }
+export { generateToken, saveToken, getToken }

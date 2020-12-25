@@ -1,5 +1,5 @@
 import React from "react";
-import goAuthorizationURI from './pkce-spotify';
+import goAuthorizationURI from '../pkce-spotify';
 
 function Login() {
   return (
