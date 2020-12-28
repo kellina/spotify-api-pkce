@@ -11,12 +11,18 @@
 [![Languages](https://img.shields.io/github/languages/count/kellina/spotify-api-pkce?color=green&style=flat-square)](#)
 [![Contributors](https://img.shields.io/github/contributors/kellina/spotify-api-pkce?color=green&style=flat-square)](https://github.com/kellina/spotify-api-pkce/graphs/contributors)
 
-# :pushpin: Summary
+# :pushpin: Table of Content
 
 * [Features](#rocket-features)
 * [Installation](#construction_worker-installation)
 * [Getting Started](#runner-getting-started)
 * [License](#closed_book-license)
+
+# :heavy_check_mark: Project Status
+
+<p align="center"> 
+    :construction:  **Under Construction**  :construction:
+</p>
 
 # :rocket: Features
 
