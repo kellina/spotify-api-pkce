@@ -20,10 +20,9 @@
 
 # :heavy_check_mark: Project Status
 
-<p align="center"> 
-    :construction:  **Under Construction**  :construction:
-</p>
+#### :construction: Under Construction
 
+    
 # :rocket: Features
 
 * :lock: &nbsp; Authentication code flow with proof key for code exchange (PKCE)
