@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './UserProfile.css'
 import { getCurrentUserProfile } from "../services/user-service";
 
 function UserProfile() {
@@ -12,11 +13,11 @@ function UserProfile() {
 
 
   return (
-    <div>
+    <div className="container">
       <h1>User Profile</h1>
-      <div>
-        <p>ID: {profile.id}</p>
+      <div className="profile">
         <img  alt="user" src={profile?.images?.length?profile.images[0].url:null} />
+        <p>ID: {profile.id}</p>
         <p>Name: {profile.display_name}</p>
         <p>Email: {profile.email}</p>
         <p>URL: {profile.href}</p>
