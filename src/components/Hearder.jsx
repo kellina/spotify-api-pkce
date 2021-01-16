@@ -17,7 +17,7 @@ function Hearder() {
                 <Link to="/user_profile">User Profile</Link>
               </li>
               <li>
-                <Link to="/user_profile">Playlist</Link>
+                <Link to="/playlist">Playlist</Link>
               </li>
             </ul>
           </nav>

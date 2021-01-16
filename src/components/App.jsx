@@ -6,6 +6,7 @@ import Login from "./Login";
 import UserProfile from './UserProfile'
 import Home from "./Home";
 import Hearder from "./Hearder";
+import Playlist from "./Playlist";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <div className="content">
         <Switch>
           <Route exact path="/"><Home /></Route>
+          <Route path="/playlist" component={Playlist} />
           <Route exact path="/user_profile" component={UserProfile} />
           <Route path="/login" component={Login} />
           <Route path="/callback" component={Callback} />
