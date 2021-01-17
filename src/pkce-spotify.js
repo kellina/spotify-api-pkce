@@ -3,6 +3,7 @@ import pkceChallenge from 'pkce-challenge'
 import querystring from 'querystring'
 import { v4 as uuid } from 'uuid'
 import axios from 'axios'
+import env from 'react-dotenv'
 
 // construct the authorization URI
 
@@ -12,8 +13,8 @@ const ACCESS_TOKEN_KEY = 'spotify_access_token'
 const ACCESS_TOKEN_EXPIRES_KEY = 'spotify_access_token_expires_in'
 const ACCESS_TOKEN_REFRESH_KEY = 'spotify_access_token_refresh'
 const SCOPE = 'user-read-private user-read-email playlist-read-private playlist-modify-private'
-const CLIENT_ID = 'f7755628beaf47cfb35f15c94e01ac18'
-const REDIRECT_URI = 'http://localhost:3000/callback'
+const CLIENT_ID = env.CLIENT_ID
+const REDIRECT_URI = env.REDIRECT_URI
 const CODE_CHALLENGE_METHOD = 'S256'
 
 
