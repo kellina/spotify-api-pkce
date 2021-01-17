@@ -19,7 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/"><Home /></Route>
           <Route path="/playlist" component={Playlist} />
-          <Route exact path="/user_profile" component={UserProfile} />
+          <Route path="/user_profile" component={UserProfile} />
           <Route path="/login" component={Login} />
           <Route path="/callback" component={Callback} />
         </Switch>
